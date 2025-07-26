@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "someone_you_loved.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
