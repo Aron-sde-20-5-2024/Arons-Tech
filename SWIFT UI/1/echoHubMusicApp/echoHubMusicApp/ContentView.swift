@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  echoHubMusicApp
-//
-//  Created by alens-caw-mac-m1 on 25/07/25.
-//
-
 import SwiftUI
 import AVFoundation
 
@@ -15,13 +8,11 @@ struct ContentView: View {
         VStack {
             HStack {
                 Text("EchoHub")
-                    .bold()
-                
+                    .bold()     
             }
             .frame(width: audioManager.musicImageWidth - 50)
             .font(.largeTitle)
-            
-            
+        
             HStack {
                 Image(audioManager.musicList[audioManager.selectedMusic-1].image)
                     .resizable()
@@ -129,19 +120,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-}
-
-
-class Music {
-    init (id: Int, title: String, singer: String, image: String) {
-        self.id = id
-        self.title = title
-        self.singer = singer
-        self.image = image
-    }
-    
-    let id: Int
-    let title: String
-    let singer: String
-    let image: String
 }
